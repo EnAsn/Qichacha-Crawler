@@ -14,9 +14,6 @@ reload(sys)
 sys.setdefaultencoding('utf-8')
 
 class BossDAO(MyDAO):
-    def __init__(self):
-        pass
-
     def insertSequence(self, sqls):
         self.db_connect('127.0.0.1', 'root', '2016leichen', 'EnterpriseInfo', charset = 'utf8mb4')
         self.db_insert_sqls(sqls)

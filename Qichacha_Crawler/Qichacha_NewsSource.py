@@ -6,7 +6,7 @@ import math
 import csv
 import lxml.html
 
-from NECIPS_Crawlers.SeleniumModel import automation
+from SeleniumModel import automation
 from selenium.webdriver.common.action_chains import ActionChains
 
 class QichachaNewsSource(automation):
