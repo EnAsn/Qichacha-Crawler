@@ -61,7 +61,7 @@ class AllOwnedComapanies(MyDAO):
 
 if __name__ == '__main__':
     DB_OBJ = AllOwnedComapanies()
-    DB_OBJ.db_connect('127.0.0.1', 'root', '2016leichen', 'EnterpriseInfo', charset = 'utf8mb4')
+    DB_OBJ.db_connect('127.0.0.1', 'root', '', 'EnterpriseInfo', charset = 'utf8mb4')
 
     timer_counter = 0
     while True:

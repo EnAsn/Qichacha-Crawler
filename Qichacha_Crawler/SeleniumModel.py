@@ -68,7 +68,7 @@ class automation():
         print 'Switch to New Page'
         window_handles = self.driver.window_handles
         time.sleep(1)
-        self.driver.switch_to_window(self.driver.window_handles[-1])
+        self.driver.switch_to.window(self.driver.window_handles[-1])
         time.sleep(3)
 
     def close(self):

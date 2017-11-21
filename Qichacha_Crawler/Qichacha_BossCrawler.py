@@ -15,12 +15,12 @@ sys.setdefaultencoding('utf-8')
 
 class BossDAO(MyDAO):
     def insertSequence(self, sqls):
-        self.db_connect('127.0.0.1', 'root', '2016leichen', 'EnterpriseInfo', charset = 'utf8mb4')
+        self.db_connect('127.0.0.1', 'root', '', 'EnterpriseInfo', charset = 'utf8mb4')
         self.db_insert_sqls(sqls)
         self.db_close()
     
     def getSearchedList(self):
-        self.db_connect('127.0.0.1', 'root', '2016leichen', 'EnterpriseInfo', charset = 'utf8mb4')
+        self.db_connect('127.0.0.1', 'root', '', 'EnterpriseInfo', charset = 'utf8mb4')
         result = self.db_retrieve('SELECT DISTINCT companyId FROM BossInfo')
         output = [item['companyId'] for item in result]
         self.db_close()
